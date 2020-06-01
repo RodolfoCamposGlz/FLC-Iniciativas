@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{s4pz:function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),l=a.n(n),c=a("Bl7J"),o=a("vrFN"),r=a("O3MD"),i=a("6vGF");t.default=function(e){var t=e.location;return l.a.createElement(c.a,null,l.a.createElement(o.a,{title:"Foro"}),void 0!==t.state.choice&&l.a.createElement("div",null,t.state.choice),l.a.createElement(i.a,null),l.a.createElement(r.a,null))}}}]);
+//# sourceMappingURL=component---src-pages-colabora-details-jsx-c177e9c73658b35e4900.js.map
