@@ -4,97 +4,58 @@
 <a href="http://slack.codeandomexico.org/" target="_blank"><img src="https://img.shields.io/badge/slack-CodeandoMexico-EC0E4F.svg"></a>
 </p>
 
-# FLC-Iniciativas
+# Frena La Curva México - Landing page
 
-**tl;dr**: Descripción de tu proyecto en un tweet.
+![demo](demo.png)
 
-## Índice
+Este repositorio contiene la landing page para México trabajando con <frenalacurva.net>.
 
-* [Acerca del proyecto](https://github.com/CodeandoMexico/civic-project-template#acerca-del-proyecto)
-* [Comienza](https://github.com/CodeandoMexico/civic-project-template#comienza)
-* [Contribuye](https://github.com/CodeandoMexico/civic-project-template#contribuye)
-* [Referencias](https://github.com/CodeandoMexico/civic-project-template#referencias)
-* [Créditos](https://github.com/CodeandoMexico/civic-project-template#creditos)
-* [Licencia](https://github.com/CodeandoMexico/civic-project-template#licencia)
+Puedes ver el demo [aquí](mexico.frenalacurva.net).
 
-## Acerca del proyecto
+### Requerimientos
 
-Este proyecto es una plantilla para crear proyectos en Codeando México. Puedes forkearla y modificarla o simplemente tomar lo que necesites. Modifícala a tu gusto. No es necesario referir a este documento en los créditos. El proyecto cuenta ya con:
+Para utilizar esta plantilla, tu computadora necesita:
 
-- [x] README.md
-- [x] Etiquetas estándar en la sección de *issues*.
-- [x] Etiquetas en el about del proyecto.
-- [x] Template para HACKLOG.md
-- [x] Archivo LICENCE con licencia MIT.
-- [ ] Plantilla para guía de contribución
-- [ ] Plantilla de *issues*.
-- [ ] Más badges!
+- Node.js. Para armar los paquetes. (https://nodejs.org/en/download/)
+- Prueba usando `node -v` en la terminal
+- npm. Usado para gestionar las dependencias.
+- Prueba usando `npm -v` en la terminal
+- Gulp. Es un _task runner_.
+  `npm install -g gulp`
+- Prueba usando `gulp -v` en la terminal
 
-## Comienza
+### Instalación:
 
-### Descarga
+- Instala los paquetes de node: `npm install`
+- Corre `gulp dev`
+- Tu sitio está visible en el URL: http://localhost:3000
+- **Nota:** Modifica sólo los archivos en la carpeta `src/`
 
-1. **Escribe aquí el primer paso.**
+### Desarrollo con Docker
 
-    Descripción breve del primer segundo.
+Para hacer y probar cambios locales en el contenido, estilos, imagenes, etc. puedes usar un contenedor docker.
 
-   ```
-   comando
-   $ otro comando
-   ```
+- `docker build . -t frenalacurva:dev`
+- `docker run --rm -it --init -p 3000:3000 -v $PWD/src/:/app/src frenalacurva:dev`
+- Tu sitio está visible en el URL: http://localhost:3000
 
-    ¿Qué sucede con este paso?
-   
-> **Nota**: Información adicional de este paso.
+#### Usar docker-compose (1.20+)
 
-2. **Segunda instrucción.**
+- `docker-compose up`
+- Tu sitio está visible en el URL: http://localhost:3000
 
-    Descripción breve del primer segundo.
+> Si necesitas cambiar algun archivo fuera de `./src` solo vuelve a ejectuar ambos comandos.
 
-   ```
-   comando
-   $ otro comando
-   ```
+### Deployment en gh-pages:
 
-    ¿Qué sucede con este paso?
+- Una vez hayas concluido el desarrollo, deberás cambiar la carpeta `dist/` que se generó por `docs/`: <br>
+  `mv dist/ docs/`
+- Haz un push de tus cambios al repositori
+- En la sección de settings de tu repositorio, ve a la opción de GitHub Pages y selección como Source la carpeta `docs/`
+- ¡Listo! Tu landing quedará servida en `<usario-u-organizacio>.github.io/<repositorio>`
 
+### Atribuciones
 
-### Instalación
-
-Utiliza como guía la sección de [Descarga](https://github.com/CodeandoMexico/civic-project-template#descarga). 
-
-
-### Ejecución
-
-Utiliza como guía la sección de [Ejecución](https://github.com/CodeandoMexico/civic-project-template#ejecucion)
-
-
-## Contribuye
-
-Incluye aquí las formas de contribuir a tu proyecto.
-
-
-## Referencias
-
-1. Bradley, T. (2013) [El Hacker Cívico: Civic-Minded Techies Gain Sway With Government in Mexico and Beyond](http://www.huffingtonpost.com/theresa-bradley/el-hacker-civico-how-civi_b_4334088.html). *The Huffington Post*.
-2. Bracy, C. (2014) [Why Good Hackers Make Good Citizens](https://www.youtube.com/watch?v=QeAGu40vZzI).
-3. Codeando México. (2015) [Los hackers cívicos mexicanos](https://www.fayerwayer.com/2015/01/los-hackers-civicos-mexicanos/). *FayerWayer*.
-4. Goldstein, B., Dyson, L. (2013) [Beyond Transparency: Open Data and the Future of Civic Innovation](http://beyondtransparency.org).
-5. Barry, L. (2016) [vTaiwan: Public Participation Methods on the Cyberpunk Frontier of Democracy](https://civichall.org/civicist/vtaiwan-democracy-frontier). *Civicist*.
-6. Swartz, A. (2008) [Open Access Guerrilla Manifesto](https://archive.org/stream/GuerillaOpenAccessManifesto/Goamjuly2008_djvu.txt).
-
-## Créditos
-
-### Core-Team
-
-* [octocat](http://github.com/octocat)
-
-### Otros contribuidores
-
-Este proyecto tampoco hubiera sido posible sin el apoyo de Richard Stallman, Aaron Swartz, Edward Snowden, Kevin Mitnick, Linus Torvalds y Chelsea Manning.
-
-`{}` con ❤️ por la comunidad de [Codeando México](http://www.codeandomexico.org).
-
-## Licencia
-
-MIT.
+- Link al repo/plantilla original: https://github.com/cssninjaStudio/fresh
+- Si tienes preguntas, puedes escribir a <rodo@codeandomexico.org>
+- Gracias a la comunidad es que este repositorio se mantiene vivo
