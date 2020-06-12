@@ -1,16 +1,14 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import LabsParticipar from '../components/labsParticipar/labsParticipar'
-import LabsCiudadanos from '../components/labsCiudadanos/labsCiudadanos'
 import Colabora from '../components/colabora/colabora'
+import ColaboraInfo from '../components/colabora/colaboraInfo'
 
 const ForoPage = () => (
   <Layout>
     <SEO title="Foro" />
+    <ColaboraInfo />
     <Colabora />
-    <LabsCiudadanos />
-    <LabsParticipar />
   </Layout>
 )
 
