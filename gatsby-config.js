@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/FLC-Iniciativas',
   siteMetadata: {
     title: `Frena la curva México`,
     description: `Guía de iniciativas ciudadanas frente al COVID19 para visibilizar, difundir y multiplicar el impacto de proyectos e iniciativas que han brotado en México`,
